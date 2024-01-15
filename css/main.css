@@ -43,7 +43,7 @@ object-fit: contain;
 }
 .header {
   width: 100%;
-  height: 162px;
+  /* height: 162px; */
 }
 .header-content {
   /* width: 991px; */
@@ -105,7 +105,7 @@ object-fit: contain;
   display: flex;
 }
 .nav-menu > li {
-  width: 137px;
+  width: 80px;
   padding: 10px 0;
 }
 
@@ -114,4 +114,208 @@ object-fit: contain;
   color: #222;
   font-size: 16px;
   font-family: "Noto Sans KR", sans-serif;
+}
+.totalSearch-wrap {
+  /* display:block; */
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0 0 10px;
+}
+.totalSearch-wrap::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #cacaca;
+  margin-right: 15px;
+}
+.totalSearch-wrap::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #cacaca;
+  margin-left: 15px;
+}
+.totalSearch-wrap label input[type="text"] {
+  width: 180px;
+  height: auto;
+  padding: 0 0 0 7px;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5em;
+  border: none;
+}
+.totalSearch-wrap .btn-totalSearch {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  line-height: 0;
+  background: transparent url("../images/검색 아이콘.png") center center/26px
+    scroll no-repeat;
+  border: 0;
+}
+/* 비디오 */
+.movieselection-wrap {
+  position: relative;
+  width: 100%;
+  /* height:672px; */
+  background-color: #000000;
+}
+
+.video-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-wrap video {
+  width: 980px;
+  height: 498px;
+  z-index: 1;
+  margin: auto;
+  display: block;
+}
+
+.video-title {
+  /* background-color: aqua; */
+  position: absolute;
+  top: 145px;
+  left: 186px;
+}
+.movieSelection-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.45em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.72);
+  pointer-events: none;
+  font-family: "Noto Sans KR", sans-serif;
+  z-index: 2;
+}
+.movieSelection-txt {
+  position: absolute;
+  width: 240px;
+  top: 64px;
+  left: 0;
+  line-height: 1.45em;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  z-index: 3;
+  font-weight: 500;
+  color: #fff;
+}
+.contents {
+  position: relative;
+}
+.movieSelection-video-controller-wrap {
+  position: absolute;
+  top: 143px;
+  left: 8px;
+}
+.btn-movieSelection-detailView {
+  display: flex;
+  padding: 5px 30px 5px 18px;
+  font-size: 14px;
+  color: #343434;
+  line-height: 1.429em;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.8) url("../images/오른쪽화살표.png")
+    calc(100% - 11px) center/8px 13px scroll no-repeat;
+  border-radius: 15px;
+}
+.btn-movieSelection-playstop {
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 99px;
+  margin-left: 10px;
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+  color: #343434;
+  background: transparent url("../images/재생버튼.png") center/30px scroll
+    no-repeat;
+}
+.btn-movieselection-soundOff {
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 140px;
+  margin-left: 10px;
+  width: 34px;
+  height: 38px;
+  font-size: 0;
+  background: transparent url("../images/음소거버튼.png") center/30px scroll
+    no-repeat;
+}
+.movieChart-wrap {
+  clear: none;
+  float: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(232, 232, 232, 0.37)
+  );
+}
+.moviechart-wrap {
+  margin-top: 50px;
+}
+.movieChart-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 40px 0;
+}
+.tabBtn-wrap h3 {
+  display: inline-flex;
+}
+.tabBtn-wrap h3 ~ h3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 115px;
+  top: 50%;
+  width: 1px;
+  height: 14px;
+  margin-top: -7px;
+  background-color: #d8d8d8;
+}
+.btnMovie {
+  font-weight: 700;
+  color: #222;
+  font-size: 26px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.btnReserMovie {
+  font-weight: 400;
+  font-size: 26px;
+  color: #666;
+  line-height: 1.423em;
+  margin-left: 30px;
+}
+.allview {
+  position: relative;
+  /* background-color: #fb4357; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.allview a,
+.allview img {
+  display: block;
+}
+.allview img {
+}
+.allview {
+  padding: 4px 15px;
+  color: #222;
+  line-height: 1.429em;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
