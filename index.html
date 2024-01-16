@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CGV 웹사이트</title>
-    <link rel="stylesheet" href="css/main.css" />
+     <!-- 스와퍼적용 -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+     <!-- js적용 -->
+   <!-- swiper 적용 -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- jquery 적용 -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+
   </head>
   <body>
     <div class="banner">
@@ -114,7 +126,128 @@
             <a href="#" class="btn-Allview">전체보기</a>
             <img src="images/오른쪽화살표.png" alt="오른쪽 화살표" />
           </div>
+        
         </div>
+        <!-- swiper -->
+         <div class="Movie-slider-wrap">
+          <div class="swiper MovieSwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img class="img1" src="images/외계인사진 (2).png" alt="외계인">
+                <div class="caption">
+                  <strong>외계+인 2부</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 93%</a>
+                  <span> 예매율 22.7%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/지오디 사진 (2).png" alt="지오디">
+                <div class="caption">
+                  <strong>지오디 마스터피스…</strong> <br>
+                  <a href="#"><img src="images/계란.png" alt="계란"> 　?</a>
+                  <span> 예매율 45.1%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/위시 사진 (1).png" alt="위시">
+                <div class="caption">
+                  <strong>위시</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 86%</a>
+                  <span> 예매율 22.7%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/스즈메 사진 (1).png" alt="스즈메">
+                <div class="caption">
+                  <strong>스즈메의 문단속-다… </strong> <br>
+                  <a href="#"><img src="images/계란.png" alt="계란"> 　?</a>
+                  <span> 예매율 22.7%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/인투 더 월드 사진 (1).png" alt="인투더월드">
+                <div class="caption">
+                  <strong>인투 더 월드</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 99%</a>
+                  <span> 예매율 22.7%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/시민덕회.png" alt="시민덕회">
+                <div class="caption">
+                  <strong>시민덕회</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 99%</a>
+                  <span> 예매율 15.3%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/노량.png" alt="노량">
+                <div class="caption">
+                  <strong>노량</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 93%</a>
+                  <span> 예매율 4.6%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/나의올드오크.png" alt="나의올드오크">
+                <div class="caption">
+                  <strong>나의 올드 오크</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 99%</a>
+                  <span> 예매율 3.9%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/서울의봄.png" alt="서울의봄">
+                <div class="caption">
+                  <strong>서울의 봄</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 99%</a>
+                  <span> 예매율 3.4%</span>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img class="img1" src="images/이런 짱구.png" alt="인투더월드">
+                <div class="caption">
+                  <strong>신차원! 짱구는 못말…</strong> <br>
+                  <a href="#"><img src="images/싹난계란.png" alt="계란"> 95%</a>
+                  <span> 예매율 1.6%</span>
+                </div>
+              
+              </li>
+            </ul> <!--//swiper-wrapper-->
+
+          </div>
+          <div class="controls">
+            <span class="prev"></span>
+            <span class="next"></span>
+          </div>
+          </div>
+          <!-- EVENT -->
+          <div class="event-wrap">
+            <div class="contents inner">
+            <div class="event-title-wrap">
+              <div class="event-btn-wrap">
+                <h3><a href="#" class="event">EVENT</a></h3>
+                <div class="event-allview">
+                  <a href="#" class="event-btn-Allview">전체보기</a>
+                  <img src="images/오른쪽화살표.png" alt="오른쪽 화살표" />
+              </div>
+              </div>
+            </div>
+            <div class="event-contents-wrap">
+              <ul class="intotheworld">
+                <li class="wish"><a href="#"><img src="images/위시이벤트.png" alt="이벤트"></a>
+                  <strong>[위시]이모티콘 이벤트</strong>
+                  <span>2023.12.21~2024.01.14</span>
+                </li>
+                <li class="wish">
+                  <a href="#"><img src="images/인투더월드이벤트.png" alt="이벤트"></a>
+                  <strong>[인투 더 월드]4DX 스페셜 굿즈</strong>
+                  <span>2023.12.29~2024.01.16</span>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
       </div>
     </div>
   </body>

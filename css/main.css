@@ -19,13 +19,13 @@ a {
   /* background-color: aqua; */
 }
 .banner {
-  background-color: rgb(27, 27, 27);
+  background-color: #63d0cb;;
 }
 .banner a {
   width: 1200px;
   height: 95px;
   display: block;
-  background: url("../images/길위에\ 김대중.jpg") no-repeat center;
+  background: url("../images/980x80.jpg") no-repeat center;
   background-size: cover;
   margin: auto;
 }
@@ -158,7 +158,7 @@ object-fit: contain;
 .movieselection-wrap {
   position: relative;
   width: 100%;
-  /* height:672px; */
+  height: 100%;
   background-color: #000000;
 }
 
@@ -169,17 +169,65 @@ object-fit: contain;
 }
 
 .video-wrap video {
-  width: 980px;
-  height: 498px;
+  /* width: 980px;
+  height: 498px; */
   z-index: 1;
   margin: auto;
   display: block;
 }
+.video-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 163px;
+  width:10%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    /* rgba(0, 0, 0, 5) 10%, */
 
+    /* 왼쪽에서 시작하여 10%까지는 완전히 불투명한 검정색 */
+    rgba(0, 0, 0, 0) 100% /* 그 이후로는 투명해지는 효과 */
+  );/* 그라데이션 효과 */
+  /* z-index: 9999; */
+}
+.video-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 131px;
+  width:10%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    /* rgba(0, 0, 0, 5) 10%, */
+
+    /* 왼쪽에서 시작하여 10%까지는 완전히 불투명한 검정색 */
+    rgba(0, 0, 0, 1) 50% /* 그 이후로는 투명해지는 효과 */
+  );/* 그라데이션 효과 */
+  /* z-index: 9999; */
+}
+
+/* .video-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%; 
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2),
+    black
+  );
+  z-index: 9999;
+} */
 .video-title {
   /* background-color: aqua; */
   position: absolute;
-  top: 145px;
+  top: 167px;
   left: 186px;
 }
 .movieSelection-title {
@@ -250,6 +298,7 @@ object-fit: contain;
   background: transparent url("../images/음소거버튼.png") center/30px scroll
     no-repeat;
 }
+/* 무비차트 */
 .movieChart-wrap {
   clear: none;
   float: none;
@@ -266,7 +315,6 @@ object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
   padding: 40px 0;
 }
 .tabBtn-wrap h3 {
@@ -276,8 +324,8 @@ object-fit: contain;
   content: "";
   display: block;
   position: absolute;
-  left: 115px;
-  top: 50%;
+  left: 126px;
+  top: 61px;
   width: 1px;
   height: 14px;
   margin-top: -7px;
@@ -286,12 +334,12 @@ object-fit: contain;
 .btnMovie {
   font-weight: 700;
   color: #222;
-  font-size: 26px;
+  font-size: 29px;
   font-family: "Noto Sans KR", sans-serif;
 }
 .btnReserMovie {
-  font-weight: 400;
-  font-size: 26px;
+  font-weight: 600;
+  font-size: 29px;
   color: #666;
   line-height: 1.423em;
   margin-left: 30px;
@@ -308,14 +356,145 @@ object-fit: contain;
 .allview img {
   display: block;
 }
-.allview img {
-}
 .allview {
-  padding: 4px 15px;
-  color: #222;
+  padding: 7px 20px;
   line-height: 1.429em;
-
   border: 1px solid #e2e2e2;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.btn-Allview {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* 슬라이더 */
+.Movie-slider-wrap{
+  position:relative;
+  width: 100%;
+  padding-bottom: 60px;
+  /* background-color: #fb4357; */
+}
+.swiper-slide .img1{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+.next{
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: -26px;
+  z-index: 9999999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(226, 226, 226, 0.9) url("../images/왼쪽화살표.png") center/9px 13px scroll no-repeat ;
+    transform: rotate(-180deg);
+}
+.prev{
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: -26px;
+  z-index: 9999999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(226, 226, 226, 0.8) url("../images/왼쪽화살표.png") center/9px 13px scroll no-repeat ;
+}
+.caption{
+font-family: "Noto Sans KR", sans-serif;
+text-align: center;
+}
+.caption strong{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+}
+.caption span{
+  font-size:17px;
+  color: #444444;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.caption a{
+  display:flex;
+  float:left;
+  color: #444444;
+  font-size:17px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+/* EVENT */
+.event-wrap {
+  clear: none;
+  float: none;
+  /* background-color: #fff; */
+}
+.event-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.event-title-wrap{
+  position: relative;
+}
+.event-wrap h3 {
+  display: flex;
+}
+.event{
+  font-weight: 700;
+  color: #222;
+  font-size: 29px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.event-allview {
+  position: relative;
+  /* background-color: #fb4357; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.event-allview a,
+.event-allview img {
+  display: block;
+}
+.event-allview {
+  padding: 7px 20px;
+  line-height: 1.429em;
+  border: 1px solid #e2e2e2;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.event-btn-Allview {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+}
+.event-contents-wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.wish{
+  display:flex;
+  flex-direction: column;
+}
+.wish a img{
+  width:310px;
+  height:207px;
+}
+.intotheworld{
+  display:flex;
+  gap: 30px;
 }
