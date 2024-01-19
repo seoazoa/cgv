@@ -27,3 +27,8 @@ $(document).ready(function(){
         // }
     })
     })
+    $('nav-overMenu li').hover(function() {
+        $('.nav-overMenu li .nav-overMenu').css('display', 'block');
+      }, function() {
+        $('.nav-overMenu li .nav-overMenu').css('display', 'none');
+      });    
