@@ -115,6 +115,43 @@ object-fit: contain;
   font-size: 16px;
   font-family: "Noto Sans KR", sans-serif;
 }
+/* 서브메뉴 */
+
+.nav-overMenu {
+  display: block;
+  position: relative;
+  margin-bottom: 8px;
+  padding: 25px 0 0 25px;
+}
+.nav-menu > li {
+  width: 178px;
+  float: left;
+}
+.nav-menu > li:first-child .nav-overMenu {
+  padding-left: 0;
+}
+.nav-overMenu dt {
+  padding-top: 18px;
+}
+.nav-overMenu dt + dd {
+  margin-top: 8px;
+}
+.nav-overMenu dd a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  line-height: 2.143em;
+}
+.nav-menu li ul{
+  display: none;
+}
+.nav-menu > li:hover > a{
+  border-bottom: 1px solid #444444;
+}
+
+
+
+/* 검색창 */
 .totalSearch-wrap {
   /* display:block; */
   display: inline-flex;
@@ -815,7 +852,7 @@ object-fit: contain;
 }
 .footer-top{
   width: 100%;
-  height:240px;
+  height:140px;
   background-color: rgba(232, 232, 232, 0.37);
 }
 .policy-list {
