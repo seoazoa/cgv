@@ -411,9 +411,10 @@ object-fit: contain;
   padding-bottom: 60px;
   /* background-color: #fb4357; */
 }
-.swiper-slide .img1 {
+.swiper-slide > img{
   position: relative;
   width: 100%;
+ /* width: 200px; */
   border-radius: 10px;
 }
 .next {
