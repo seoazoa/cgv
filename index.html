@@ -9,22 +9,40 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    
     <!-- js적용 -->
     <!-- swiper 적용 -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- jquery 적용 -->
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
+    <script src="js/prefixfree.min.js"></script>
     
   </head>
   <body>
+    <!-- top botton -->
+    <div class="top-button">
+      <a href="#" class="chat-btn">
+        <img src="images/예매하기.png" alt="예매버튼">
+    </a>
+      <a href="#" class="top-btn" id="top-btn">
+          <img src="/images/up_arrow_icon.png" alt="btn" id="top-btn-img">
+      </a>
+      <a href="#" class="bottom-btn" id="bottom-btn">
+        <img src="/images/up_arrow_icon.png" alt="btn" id="bottom-btn-img">
+    </a>
+  </div>
+  <!-- 배너 -->
     <div class="banner">
       <a href="#"></a>
     </div>
+  <!-- 전체 레이아웃 -->
     <div class="container">
-      <div class="header">
+      <div class="header inner"">
         <div class="header-content inner">
           <div class="logo">
             <a href="#"> <img src="images/cgv로고.png" alt="더보기" /></a>
@@ -52,154 +70,101 @@
           </ul>
         </div>
         <div class="nav">
-          <div class="nav-content inner">
-            <h1><a href="#"></a></h1>
-            <ul class="nav-menu">
+          <div class="nav-content ">
+            <ul class="gnb inner" >
               <li>
                 <h2><a href="#">영화</a></h2>
-                <dl class="nav-overMenu">
-                  <dt>
-                    <h2><a href="#">영화</a></h2>
-                  </dt>
-                  <dd>
-                    <h3><a href="#">무비차트</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">아트하우스</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">ICECON</a></h3>
-                  </dd>
-                </dl>
+                <ul class="depth2">
+                 
+                  <li><a href="#">무비차트</a></li>
+                  <li><a href="#">아트하우스</a></li>
+                  <li><a href="#">ICECON</a></li>
+                </ul>
               </li>
               <li>
                 <h2><a href="#">극장</a></h2>
-                <dl class="nav-overMenu">
-                  <dt>
-                    <h2><a href="#">극장</a></h2>
-                  </dt>
-                  <dd>
-                    <h3><a href="#">CGV 극장</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">특별관</a></h3>
-                  </dd>
-                </dl>
+                <ul class="depth2">
+                  
+                  <li><a href="#">CGV 극장</a></li>
+                  <li><a href="#">특별관</a></li>
+                </ul>
               </li>
               <li>
                 <h2><a href="#">예매</a></h2>
-                <dl class="nav-overMenu">
-                  <dt>
-                    <h2><a href="#">예매</a></h2>
-                  </dt>
-                  <dd>
-                    <h3><a href="#">빠른예매</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">상영스케줄</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">English Ticketing</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">English Schedule</a></h3>
-                  </dd>
-                </dl>
+                <ul class="depth2">
+                  
+                  <li><a href="#">빠른예매</a></li>
+                  <li><a href="#">English Ticketing</a></li>
+                  <li><a href="#">English Schedule</a></li>
+                </ul>
               </li>
               <li>
                 <h2><a href="#">스토어</a></h2>
-                <dl class="nav-overMenu">
-                  <dt>
-                    <h2><a href="#">스토어</a></h2>
-                  </dt>
-                  <dd>
-                    <h3><a href="#">패키지</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">영화관람권</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">기프트카드</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">콤보</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">팝콘</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">음료</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">스낵</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">플레이존</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">씨네샵</a></h3>
-                  </dd>
-                </dl>
+                <ul class="depth2">
+                 
+                  <li><a href="#">패키지</a></li>
+                  <li><a href="#">영화관람권</a></li>
+                  <li><a href="#">기프트카드</a></li>
+                  <li><a href="#">콤보</a></li>
+                  <li><a href="#">팝콘</a></li>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">스낵</a></li>
+                  <li><a href="#">플레이존</a></li>
+                  <li><a href="#">씨네샵 ></a></li>
+                </ul>
               </li>
               <li>
                 <h2><a href="#">이벤트</a></h2>
-                <dl class="nav-overMenu">
-                  <dt>
-                    <h2><a href="#">SPECIAL</a></h2>
-                  </dt>
-                  <dd>
-                    <h3><a href="#">영화/예매</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">멤버십/CLUB</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">CGV 극장별</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">제휴할인</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">당첨자 발표</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">종료된 이벤트</a></h3>
-                  </dd>
-                </dl>
+                <ul class="depth2">
+                
+                  <li><a href="#">SPECIAL</a></li>
+                  <li><a href="#">영화/예매</a></li>
+                  <li><a href="#">멤버십/CLUB</a></li>
+                  <li><a href="#">CGV 극장별</a></li>
+                  <li><a href="#">제휴할인</a></li>
+                  <li><a href="#">당첨자 발표</a></li>
+                  <li><a href="#">종료된 이벤트</a></li>
+                </ul>
               </li>
               <li>
                 <h2><a href="#">혜택</a></h2>
-                <dl class="nav-overMenu">
-                  <dt>
-                    <h2><a href="#">혜택</a></h2>
-                  </dt>
-                  <dd>
-                    <h3><a href="#">CGV 할인정보</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">CLUB 서비스</a></h3>
-                  </dd>
-                  <dd>
-                    <h3><a href="#">VIP 라운지</a></h3>
-                  </dd>
-                </dl>
+                <ul class="depth2">
+                  
+                  <li><a href="#">CGV 할인정보</a></li>
+                  <li><a href="#">CLUB 서비스</a></li>
+                  <li><a href="#">VIP 라운지</a></li>
+                </ul>
               </li>
             </ul>
             <div class="totalSearch-wrap">
               <label for="totalSearch inner">
                 <input type="text" id="header-keyword" value />
-                <input
-                  type="hidden"
-                  id="header-ad-keyword"
-                  name="header-ad-keyword"
-                />
+        
               </label>
               <button type="button" class="btn-totalSearch">검색</button>
             </div>
           </div>
         </div>
+        <div class="nav-hover"></div>
       </div>
     </div>
+    <script>
+ const gnb = document.querySelector('.gnb');
+  const depth2 = document.querySelector('.depth2');
+  const navHover = document.querySelector('.nav-hover');
+
+  // 마우스 진입 이벤트에 대한 이벤트 리스너
+  gnb.addEventListener('mouseenter', function () {
+    depth2.style.display = 'block';
+    navHover.style.display = 'block';
+  });
+
+  // 마우스 이탈 이벤트에 대한 이벤트 리스너
+  gnb.addEventListener('mouseleave', function () {
+    depth2.style.display = 'none';
+    navHover.style.display = 'none';
+  });
+    </script>
     <!-- 비디오 -->
     <div class="movieselection-wrap">
       <div class="contents inner">
@@ -225,6 +190,13 @@
         </div>
       </div>
     </div>
+    <script>
+      const video = document.querySelector('.video-wrap video');
+video.addEventListener('ended', function() {
+  video.currentTime = 0;
+  video.play();
+});
+    </script>
     <!-- 무비차트 -->
     <div class="movieChart-wrap">
       <div class="contents inner">
@@ -363,10 +335,11 @@
           </div>
           <div class="controls">
             <span class="prev"></span>
-            <span class="next"></span>
+            <div class="next"></div>
           </div>
         </div>
       </div>
+
       <!-- EVENT -->
       <div class="event-wrap">
         <div class="contents inner">
@@ -384,22 +357,25 @@
             <ul class="intotheworld">
               <li class="wish">
                 <div class="wish-img">
-                <a href="#"><img src="images/위시이벤트.png" alt="이벤트" /></a>
+                  <a href="#"
+                    ><img src="images/위시이벤트.png" alt="이벤트"
+                  /></a>
                 </div>
                 <div class="wish-strong">
-                <strong>[위시]이모티콘 이벤트</strong>
-                <span>2023.12.21~2024.01.14</span>
-              </div>
+                  <strong>[위시]이모티콘 이벤트</strong>
+                  <span>2023.12.21~2024.01.14</span>
+                </div>
               </li>
               <li class="wish">
                 <div class="wish-img">
-                <a href="#"><img src="images/인투더월드이벤트.png" alt="이벤트"
-                /></a>
-              </div>
-              <div class="wish-strong">
-                <strong>[인투 더 월드]4DX 스페셜 굿즈</strong>
-                <span>2023.12.29~2024.01.16</span>
-              </div>
+                  <a href="#"
+                    ><img src="images/인투더월드이벤트.png" alt="이벤트"
+                  /></a>
+                </div>
+                <div class="wish-strong">
+                  <strong>[인투 더 월드]4DX 스페셜 굿즈</strong>
+                  <span>2023.12.29~2024.01.16</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -418,7 +394,8 @@
             </div>
           </div>
           <div class="specialhall-content">
-            <a href="#"><img src="images/호텔컨셉.png" alt="" /></a>
+            <a href="#"><img src="images/호텔컨셉.png" alt="사진"/></a>
+            
             <ul class="specialhall-list">
               <li>
                 <a href="#">
@@ -430,7 +407,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li onmouseover="changeImage()">
                 <a href="#">
                   <strong>CINE & LIVINGROOM</strong>
                   <div class="specialhall-hashTag-wrap">
@@ -695,6 +672,35 @@
               <a href="#" class="btn-familysite">GO</a>
             </section>
           </article>
+        </div>
+      </div>
+      <div class="fixed-nav-wrap">
+        <div class="fixed-nav-content">
+          <a href="#"><img src="images/logoWhite.png" alt="로고"></a>
+        </div>
+          <ul class="fixed-nav" >
+            <li>
+              <h2><a href="#">영화</a></h2>
+            </li>
+            <li>
+              <h2><a href="#">극장</a></h2>
+            </li>
+            <li>
+              <h2><a href="#">예매</a></h2>
+            </li>
+            <li>
+              <h2><a href="#">스토어</a></h2>
+            </li>
+            <li>
+              <h2><a href="#">이벤트</a></h2>
+            </li>
+            <li>
+              <h2><a href="#">혜택</a></h2>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
         </div>
       </div>
     </div>
